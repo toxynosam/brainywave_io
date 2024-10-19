@@ -1,0 +1,310 @@
+/* FONT FACES */
+@font-face {
+  font-family: "Gilroy";
+  src: url(./fonts/Gilroy-Regular.ttf);
+}
+@font-face {
+  font-family: "Gilroy_Thin";
+  src: url(./fonts//Gilroy-Thin.ttf);
+}
+@font-face {
+  font-family: "Gilroy_Light";
+  src: url(./fonts//Gilroy-Light.ttf);
+}
+@font-face {
+  font-family: "Gilroy_Semibold";
+  src: url(./fonts//Gilroy-SemiBold.ttf);
+}
+@font-face {
+  font-family: "Gilroy_Bold";
+  src: url(./fonts//Gilroy-Bold.ttf);
+}
+/* FONT FACES */
+
+/* Variables */
+:root {
+  --ba-blue: #473bf0;
+  --ba-red: #f64b4b;
+  --ba-green: #68d585;
+  --ba-orange: #fcad38;
+  --ba-black: #161c2d;
+  --ba-black-muted: #161c2d8e;
+  --ba-line: #e7e9ed;
+  --ba-hero-bg: #f3f3f3;
+}
+/* Variables */
+
+/* RESET */
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+body {
+  font-family: "Gilroy", sans-serif;
+  overflow-x: hidden;
+  font-size: 16px;
+  width: 100%;
+  height: auto;
+}
+
+/* Utility */
+.primary_btn {
+  padding: 13px 23px;
+  width: 220px;
+  border-radius: 8px;
+  background-color: var(--ba-blue);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+.container_pd {
+  padding: 2rem 4rem;
+}
+
+/* Header */
+header {
+  width: 100%;
+  background-color: var(--ba-hero-bg);
+}
+
+header > nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Gilroy_Semibold";
+}
+
+header > nav > div:first-child,
+header > nav > div:first-child ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.5rem;
+}
+
+header > nav > div:first-child span {
+  font-size: 20px;
+  font-family: "Gilroy_Semibold";
+}
+
+header > section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center center;
+  gap: 4rem;
+  margin-top: 4rem;
+}
+
+header > section > div:first-of-type {
+  padding-left: 2rem;
+  width: 80%;
+}
+
+header > section > div:first-of-type h1 {
+  font-size: 60px;
+  font-family: "Gilroy_Semibold";
+  margin: 3rem 0rem;
+}
+
+header > section > div:first-of-type p {
+  font-size: 19px;
+  font-family: "Gilroy_Light";
+  color: var(--ba-black-muted);
+  line-height: 1.5;
+  margin: 3rem 0rem;
+  width: 80%;
+}
+
+header > section > div:first-of-type small {
+  color: var(--ba-red);
+  text-transform: uppercase;
+  font-family: "Gilroy_Semibold";
+}
+
+header > section > div:last-of-type {
+  padding: 4.5rem;
+}
+
+header > section > div:last-of-type > img {
+  width: 100%;
+}
+
+/* Main Section */
+main > section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin-bottom: 3rem;
+}
+
+main section:nth-child(1) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+main section:nth-child(1) .fly {
+  position: absolute;
+  bottom: 30px;
+  left: 78%;
+  z-index: -1;
+}
+
+main section:nth-child(1) .fly > img {
+  width: 129px;
+  height: 79px;
+}
+
+main section:nth-child(1) > small {
+  font-family: "Gilroy_Bold", sans-serif;
+  text-transform: uppercase;
+  font-size: 17px;
+  letter-spacing: 3px;
+  color: var(--ba-red);
+  margin-bottom: 1.5rem;
+}
+
+main section:nth-child(1) > h2 {
+  font-family: "Gilroy_Bold", sans-serif;
+  text-transform: capitalize;
+  font-size: 36px;
+  margin-bottom: 1.5rem;
+  width: 45%;
+  text-align: center;
+}
+
+main section:nth-child(1) > div {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center center;
+  gap: 4rem;
+  margin-top: 4rem;
+}
+
+main section:nth-child(1) > div > div:nth-child(1),
+main section:nth-child(1) > div > div:nth-child(2),
+main section:nth-child(1) > div > div:nth-child(3) {
+  background-color: var(--ba-green);
+  color: #fff;
+  height: 483px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 8px;
+  padding: 2rem;
+  cursor: pointer;
+}
+
+main section:nth-child(1) > div > div:nth-child(2) {
+  background-color: var(--ba-blue);
+}
+
+main section:nth-child(1) > div > div:nth-child(3) {
+  background-color: var(--ba-red);
+}
+
+main section:nth-child(1) > div > div:nth-child(1) > img,
+main section:nth-child(1) > div > div:nth-child(2) > img,
+main section:nth-child(1) > div > div:nth-child(3) > img {
+  width: 118px;
+  height: 132px;
+}
+
+main section:nth-child(1) > div > div:nth-child(1) > h3,
+main section:nth-child(1) > div > div:nth-child(2) > h3,
+main section:nth-child(1) > div > div:nth-child(3) > h3 {
+  font-family: "Gilroy_Semibold", sans-serif;
+  font-size: 24px;
+  text-transform: capitalize;
+}
+
+main section:nth-child(1) > div > div:nth-child(1) > p,
+main section:nth-child(1) > div > div:nth-child(2) > p,
+main section:nth-child(1) > div > div:nth-child(3) > p {
+  font-family: "Gilroy_Light", sans-serif;
+  color: #ffffff91;
+  font-size: 17px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+main section:nth-child(1) > div > div:nth-child(1) > button,
+main section:nth-child(1) > div > div:nth-child(2) > button,
+main section:nth-child(1) > div > div:nth-child(3) > button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  transition: all 0.2s ease-in-out;
+}
+
+main section:nth-child(1) > div > div:nth-child(1) > button:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+main section:nth-child(2){
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  margin: auto;
+  width: 60%;
+}
+
+main section:nth-child(2) > div > img{
+  width: 90px;
+  height: 90px;
+  
+}
+
+main section:nth-child(2) > :nth-child(2) > p{
+  font-size: 16px;
+  font-family: "Gilroy_Semibold";
+  width: 100%;
+  line-height: 1.5rem;
+  margin-bottom: 8px;
+  margin-top: 15px;
+  color: var(--ba-black);
+}
+
+main section:nth-child(2) > :nth-child(2) > i{
+  color: #FCAD38;
+}
+
+main section:nth-child(2) > :nth-child(2) > span:first-of-type{
+  font-size: 12px;
+  font-family: "Gilroy_Bold";
+  color: var(--ba-black);
+}
+
+main section:nth-child(2) > :nth-child(2) > span:last-child{
+  color: var(--ba-black);
+  font-size: 12px;
+}
+
