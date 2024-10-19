@@ -277,6 +277,10 @@ main section:nth-child(2){
   width: 60%;
 }
 
+main section:nth-child(2){
+  border-bottom: .3px solid #E7E9ED;
+}
+
 main section:nth-child(2) > div > img{
   width: 90px;
   height: 90px;
@@ -307,4 +311,6 @@ main section:nth-child(2) > :nth-child(2) > span:last-child{
   color: var(--ba-black);
   font-size: 12px;
 }
+
+
 
