@@ -275,6 +275,7 @@ main section:nth-child(2){
   gap: 5rem;
   margin: auto;
   width: 60%;
+  margin-bottom: 4rem;
 }
 
 main section:nth-child(2){
@@ -311,6 +312,78 @@ main section:nth-child(2) > :nth-child(2) > span:last-child{
   color: var(--ba-black);
   font-size: 12px;
 }
+
+main section:nth-child(3) > div > small{
+  color: var(--ba-red);
+  font-size: 17px;
+  font-family: "Gilroy";
+  
+}
+
+main section:nth-child(3) > div:first-of-type > p{
+ font-size: 30px;
+ width: 40%;
+ margin-top: 20px;
+ color: var(--ba-black);
+ font-family: "Gilroy_Semibold";
+ margin-bottom: 5rem;
+}
+
+main section:nth-child(3) > div:nth-child(2){
+  /* background-color: #473bf0; */
+  display: flex;
+  margin: auto;
+  position: relative;
+  
+}
+
+main section:nth-child(3) > div > div > img{
+  width: 30%;
+  height: auto;
+  position: absolute;
+  top: 90px;
+}
+main section:nth-child(3) > div > div > div > img{
+  width: 20%;
+  height: auto;
+  position: absolute;
+  left: 470px;
+  top: 20px;
+  
+}
+
+main section:nth-child(3) > div > div > div:last-child img{
+  width: 10%;
+  height: auto;
+ position: absolute;
+ top: 90px;
+ left: 800px;
+}
+
+.story_pattern{
+  width: 6%;
+  height: auto;
+  margin-left: 680px;
+  z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+  
+
+
 
 
 
