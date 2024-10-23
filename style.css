@@ -584,11 +584,53 @@ main section:nth-child(3) > div > div > img{
 .product_container{
   display: flex;
 }
-/* .products{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0;
-} */
+
+.tesimonial{
+  background-image: url(./images/bg_pattern.png);
+  background-size: 100% auto;
+  background-size: cover;  
+  background-position: center;
+  background-repeat: no-repeat;        
+  text-align: center;
+  height: 635px;
+  width: 100%;
+}
+
+.tesimonial h4{
+  padding-top: 4rem;
+  text-transform: uppercase;
+  color:#68D585;
+  font-size: 15px;
+  
+  
+}
+
+.tesimonial h2{
+  font-size: 25px;
+  color: #FFFFFF;
+  width: 45%;
+  text-align: center;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.test_img{
+  width: 76px;
+  height: 76px;
+  margin-top: 70px;
+}
+
+.test_con h6 {
+  color: var(--ba-line);
+  margin-top: 12px;
+}
+
+.test_con h5{
+  color: #ffffff65;
+  font-size: 12px;
+  margin-top: 10px;
+  font-family: "Gilroy_Thin";
+}
 
 
 
