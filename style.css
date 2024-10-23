@@ -57,8 +57,8 @@ body {
   font-family: "Gilroy", sans-serif;
   overflow-x: hidden;
   font-size: 16px;
-  width: 100%;
-  height: auto;
+  /* width: 100%; */
+  /* height: auto; */
 }
 
 /* Utility */
@@ -515,6 +515,80 @@ main section:nth-child(3) > div > div > img{
   font-size: inherit;
   font-family: inherit;
 }
+
+.case_study{
+  width: 50%;
+  margin: auto;
+}
+
+.case_study h3{
+  color: var(--ba-red);
+  font-size: 13px;
+  font-family: "Gilroy_Bold";
+  /* margin: auto; */
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 30px;
+/* padding-bottom: 10px; */
+}
+
+.case_study h4{
+  font-size: 25px;
+  color: var(--ba-black);
+  font-family: "Gilroy_Bold";
+  width: 60%;
+  margin: auto;
+  line-height: 2.5rem;
+  padding-top: 25px;
+  padding-bottom: 3rem;
+  text-align: center;
+}
+
+.products{
+  margin-top: 70px;
+}
+
+.products .big_product img{
+  width: 85%;
+  
+}
+
+.products .big_product h6, .products .small_product h6{
+  color: var(--ba-black-muted);
+  text-transform: capitalize;
+  text-align: start;
+  margin-bottom: 10px;
+  margin-top: 7px;
+
+
+}
+
+.products .big_product h5, .products .small_product h5{
+  font-size: 15px;
+  color: var(--ba-black);
+  font-family: "Gilroy_Bold";
+}
+
+.products .small_product img{
+  width: 85%;
+}
+
+.products{
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-direction: column;
+  
+}
+
+.product_container{
+  display: flex;
+}
+/* .products{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+} */
 
 
 
