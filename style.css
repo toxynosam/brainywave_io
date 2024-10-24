@@ -422,8 +422,15 @@ main section:nth-child(3) > div > div > img{
   /* text-align: center; */
   /* margin: auto; */
   /* justify-content: center; */
+  position: relative;
+
 }
 
+.card_section .pattern{
+  width: 5%;
+  position: absolute;
+  top: 120px;
+}
 .card_section h5{
   color: var(--ba-red);
   font-size: 13px;
@@ -549,7 +556,7 @@ main section:nth-child(3) > div > div > img{
 }
 
 .products .big_product img{
-  width: 85%;
+  width: 100%;
   
 }
 
@@ -570,7 +577,7 @@ main section:nth-child(3) > div > div > img{
 }
 
 .products .small_product img{
-  width: 85%;
+  width: 100%;
 }
 
 .products{
@@ -583,6 +590,8 @@ main section:nth-child(3) > div > div > img{
 
 .product_container{
   display: flex;
+  gap: 2rem;
+  margin-bottom: 100px;
 }
 
 .tesimonial{
@@ -594,6 +603,7 @@ main section:nth-child(3) > div > div > img{
   text-align: center;
   height: 635px;
   width: 100%;
+  margin: 0 0;
 }
 
 .tesimonial h4{
@@ -632,5 +642,35 @@ main section:nth-child(3) > div > div > img{
   font-family: "Gilroy_Thin";
 }
 
+footer{
+  background-color: var(--ba-black);
+  height: 100vh;
+}
+
+
+footer .cta p{
+  width: 70%;
+  padding-top: 10px;
+  color: #ffffff65;
+}
+
+footer .cta h3{
+  font-family: "Gilroy_Bold";
+  color: #F4F7FA;
+}
+
+.footer_container span{
+  font-size: 20px;
+  font-family: "Gilroy_Semibold";
+  color: var(--ba-line);
+}
+
+.footer_container p{
+  width: 22%;
+  font-size: 15px;
+  margin-top: 20px;
+  color: #ffffff65;
+  margin-bottom: 15px;
+}
 
 
