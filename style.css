@@ -663,14 +663,75 @@ footer .cta h3{
   font-size: 20px;
   font-family: "Gilroy_Semibold";
   color: var(--ba-line);
+  
+}
+
+.footer_container{
+  margin-top: 10rem;
+  
 }
 
 .footer_container p{
-  width: 22%;
-  font-size: 15px;
+  width: 65%;
+  font-size: 12px;
   margin-top: 20px;
   color: #ffffff65;
   margin-bottom: 15px;
+  line-height: 1.5rem;
+  
 }
+
+.footer_container .footer_list button{
+  background: none;
+  border: none;
+  color: #ffffff65;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  font-size: 12px;
+  
+
+}
+
+
+.footer_container{
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 100px;
+  max-width: 1200px;
+  width: 80%;
+  margin: 200px auto;  
+}
+
+.xyz {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 65px;
+}
+
+.footer_list ul {
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+  font-size: 12px;
+  color: var(--ba-hero-bg);
+}
+
+.icons{
+  color: var(--ba-hero-bg);
+  display: flex;
+  gap: 1.5rem;
+}
+
+.icons i:nth-child(2),
+.icons i:nth-child(3), 
+.icons i:nth-child(4){
+  color: #ffffff5e;
+}
+
+
+
+
+
+
 
 
